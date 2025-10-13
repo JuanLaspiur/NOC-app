@@ -10,7 +10,7 @@ export class CheckService implements CheckServiceUseCase {
           if(!req.ok){
             throw new Error(`Error on check service ${url}`)
           }
-             console.log(`Servicio google is ok `)
+             console.log(`Servicio ${url} is ok `)
           return true
         } catch (error) {
             console.log(` ${error}`)

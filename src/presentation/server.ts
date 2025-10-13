@@ -5,9 +5,9 @@ export class Server {
     public static start() {
 
         CronService.createJob({
-           cronTime: '*/5 * * * * *',
+           cronTime: '* */9 * * * *',
             onTick:()=>{
-               new CheckService().execute('https://google.com')
+               new CheckService().execute('http://localhost:3000/users')
             },
             timeZone :'America/Argentina/Buenos_Aires'},
 
